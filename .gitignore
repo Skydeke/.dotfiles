@@ -4,13 +4,15 @@
 # But not these files...
 !.gitignore
 !/.config/
+!/.local/
+!/.local/state/
 
 #Environment variables
 !.env
 
 # Newsboat-Images
-!.w3m
-!.w3m/config
+!/.local/state/w3m
+!/.local/state/w3m/config
 !.config/newsboat
 !.config/newsboat/config
 !.config/newsboat/image-preview/

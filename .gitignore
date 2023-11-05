@@ -22,3 +22,7 @@
 !/.config/terminator/
 !/.config/terminator/config
 !/.config/terminator/startupconfig
+
+# Fish-Shell startup script
+!/.config/fish/
+!/.config/fish/config.fish

@@ -11,10 +11,10 @@
 # Newsboat-Images
 !.w3m
 !.w3m/config
-!.newsboat
-!.newsboat/config
-!.newsboat/image-preview/
-!.newsboat/image-preview/nbparser
+!.config/newsboat
+!.config/newsboat/config
+!.config/newsboat/image-preview/
+!.config/newsboat/image-preview/nbparser
 
 # Terminator-Config
 !/.config/terminator/

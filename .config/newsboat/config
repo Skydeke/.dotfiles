@@ -1,4 +1,4 @@
-pager "~/.newsboat/image-preview/nbparser"
+pager "~/.config/newsboat/image-preview/nbparser"
 html-renderer "/bin/cat"
 #html-renderer "/usr/bin/mdcat"
 prepopulate-query-feeds yes

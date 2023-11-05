@@ -5,6 +5,9 @@
 !.gitignore
 !/.config/
 
+#Environment variables
+!.env
+
 # Newsboat-Images
 !.w3m
 !.w3m/config

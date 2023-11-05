@@ -1,0 +1,7 @@
+pager "~/.newsboat/image-preview/nbparser"
+html-renderer "/bin/cat"
+#html-renderer "/usr/bin/mdcat"
+prepopulate-query-feeds yes
+include /usr/share/doc/newsboat/contrib/colorschemes/inkpot
+#include /usr/share/doc/newsboat/contrib/colorschemes/solarized-dark
+#include /usr/share/doc/newsboat/contrib/colorschemes/nord

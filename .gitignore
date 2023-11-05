@@ -3,3 +3,17 @@
 
 # But not these files...
 !.gitignore
+!/.config/
+
+# Newsboat-Images
+!.w3m
+!.w3m/config
+!.newsboat
+!.newsboat/config
+!.newsboat/image-preview/
+!.newsboat/image-preview/nbparser
+
+# Terminator-Config
+!/.config/terminator/
+!/.config/terminator/config
+!/.config/terminator/startupconfig

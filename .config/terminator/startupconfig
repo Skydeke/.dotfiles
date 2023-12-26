@@ -205,7 +205,7 @@
       order = 0
       profile = background
       uuid = 958b3e52-fcf1-47e5-a6e0-74f085aae494
-      command = source ~/.bashrc && newsboat -r  && bash
+      command = 'bash -c "source ~/.bashrc && newsboat -r"'
     [[[terminal10]]]
       type = Terminal
       parent = child8

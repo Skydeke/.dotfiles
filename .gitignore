@@ -53,4 +53,7 @@
 !/.config/hypr/shaders/invert.frag
 !/.config/hypr/shaders/solarized.frag
 
+# hypridle-Config
+!/.config/hypr
+!/.config/hypr/hypridle.conf
 

@@ -34,3 +34,23 @@
 # Starship-Config
 !/.config/starship.toml
 
+# hyprland-Config
+!/.config/hypr
+!/.config/hypr/hyprland.conf
+!/.config/hypr/hyprland
+!/.config/hypr/hyprland/colors.conf
+!/.config/hypr/hyprland/colors_default.conf
+!/.config/hypr/hyprland/env.conf
+!/.config/hypr/hyprland/execs.conf
+!/.config/hypr/hyprland/keybinds.conf
+!/.config/hypr/hyprland/plugins.conf
+!/.config/hypr/hyprland/rules.conf
+!/.config/hypr/shaders
+!/.config/hypr/shaders/chromatic_abberation.frag 
+!/.config/hypr/shaders/crt.frag
+!/.config/hypr/shaders/drugs.frag
+!/.config/hypr/shaders/extradark.frag
+!/.config/hypr/shaders/invert.frag
+!/.config/hypr/shaders/solarized.frag
+
+

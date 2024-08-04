@@ -23,6 +23,14 @@
 !/.config/terminator/config
 !/.config/terminator/startupconfig
 
+# Alacritty-Config
+!/.config/alacritty/
+!/.config/alacritty/alacritty.toml
+
 # Fish-Shell startup script
 !/.config/fish/
 !/.config/fish/config.fish
+
+# Starship-Config
+!/.config/starship.toml
+

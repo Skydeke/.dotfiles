@@ -6,7 +6,6 @@
   hide_from_taskbar = True
   inactive_color_offset = 0.90625
   enabled_plugins = TerminalShot, LaunchpadBugURLHandler, LaunchpadCodeURLHandler, APTURLHandler
-  suppress_multiple_term_dialog = True
   always_split_with_profile = True
   smart_copy = False
   link_single_click = True
@@ -16,7 +15,7 @@
     icon_bell = False
     background_darkness = 0.85
     background_type = transparent
-    font = Source Code Pro 10
+    font = JetBrainsMono Nerd Font 10
     foreground_color = "#ffffff"
     scrollbar_position = hidden
     scroll_on_output = True

@@ -1,0 +1,42 @@
+live_config_reload = true
+window.opacity = 0.75
+
+[font]
+size = 10
+
+[[keyboard.bindings]]
+action = "SpawnNewInstance"
+key = "Return"
+mods = "Control|Shift"
+
+[window.padding]
+x = 10
+y = 10
+
+[colors.primary]
+background = "0x2C2C2C"
+foreground = "0xD3D7CF"
+
+[colors.normal]
+black = "0x2E3436"
+red = "0xCC0000"
+green = "0x4E9A06"
+yellow = "0xC4A000"
+blue = "0x3465A4"
+magenta = "0x75507B"
+cyan = "0x06989A"
+white = "0xD3D7CF"
+
+[colors.bright]
+black = "0x555753"
+red = "0xEF2929"
+green = "0x8AE234"
+yellow = "0xFCE94F"
+blue = "0x729FCF"
+magenta = "0xAD7FA8"
+cyan = "0x34E2E2"
+white = "0xEEEEEC"
+
+[env]
+TERM = "xterm-256color"
+

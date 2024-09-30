@@ -57,3 +57,15 @@
 !/.config/hypr
 !/.config/hypr/hypridle.conf
 
+# Systemd
+!/.local/share/
+!/.local/share/systemd
+!/.local/share/systemd/user
+!/.local/share/systemd/user/hyprland-session.service
+!/.config/systemd
+!/.config/systemd/user
+!/.config/systemd/user/ssh-agent.service 
+
+# Fontconfig
+!/.config/fontconfig
+!/.config/fontconfig/fonts.conf

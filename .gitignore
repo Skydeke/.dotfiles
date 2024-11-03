@@ -7,17 +7,27 @@
 !/.local/
 !/.local/state/
 
+# Bash
+!/.bashrc
+!/.bash_aliases
+!/.bash_logout
+!/.bash_profile
+
+# Conda
+!/.condarc
+
 # Rofi / Cliphist
-!.config/rofi/launcher.rasi
-!.config/rofi/windows11-list-dark.rasi
+!/.config/rofi
+!/.config/rofi/launcher.rasi
+!/.config/rofi/windows11-list-dark.rasi
 
 # Newsboat-Images
 !/.local/state/w3m
 !/.local/state/w3m/config
-!.config/newsboat
-!.config/newsboat/config
-!.config/newsboat/image-preview/
-!.config/newsboat/image-preview/nbparser
+!/.config/newsboat
+!/.config/newsboat/config
+!/.config/newsboat/image-preview/
+!/.config/newsboat/image-preview/nbparser
 
 # Terminator-Config
 !/.config/terminator/

@@ -7,8 +7,9 @@
 !/.local/
 !/.local/state/
 
-#Environment variables
-!.env
+# Rofi / Cliphist
+!.config/rofi/launcher.rasi
+!.config/rofi/windows11-list-dark.rasi
 
 # Newsboat-Images
 !/.local/state/w3m
@@ -65,6 +66,7 @@
 !/.config/systemd
 !/.config/systemd/user
 !/.config/systemd/user/ssh-agent.service 
+!/.config/systemd/user/mpris-proxy.service
 
 # Fontconfig
 !/.config/fontconfig

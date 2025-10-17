@@ -6,7 +6,7 @@
 
 # don't put duplicate lines or lines starting with space in the history.
 # See bash(1) for more options
-HISTCONTROL=ignoreboth
+HISTCONTROL=ignoredups:erasedups
 
 # append to the history file, don't overwrite it
 shopt -s histappend
@@ -113,7 +113,8 @@ if ! shopt -oq posix; then
 fi
 
 # Save history from multiple open terminals
-export PROMPT_COMMAND='history -a'
+trap 'history -a; history -c; history -r' DEBUG
+PROMPT_COMMAND='history -a; history -n; history -c; history -r'
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 export CRYPTOGRAPHY_OPENSSL_NO_LEGACY="1"
 

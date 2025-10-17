@@ -54,6 +54,9 @@
 # Fish-Shell startup script
 !/.config/fish/
 !/.config/fish/config.fish
+!/.config/fish/fish_plugins
+!/.config/fish/fish_variables
+!/.config/fish/functions/up-or-search.fish
 
 # Starship-Config
 !/.config/starship.toml

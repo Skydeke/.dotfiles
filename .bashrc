@@ -113,8 +113,7 @@ if ! shopt -oq posix; then
 fi
 
 # Save history from multiple open terminals
-trap 'history -a; history -c; history -r' DEBUG
-PROMPT_COMMAND='history -a; history -n; history -c; history -r'
+PROMPT_COMMAND='history -a;'
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 export CRYPTOGRAPHY_OPENSSL_NO_LEGACY="1"
 

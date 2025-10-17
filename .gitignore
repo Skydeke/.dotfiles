@@ -28,6 +28,11 @@
 !/.config/mpv/shaders
 !/.config/mpv/shaders/*
 
+# Script
+!/.config/Scripts
+!/.config/Scripts/upower-bars.sh
+!/.config/Scripts/install-grub-secureboot.sh
+
 
 # Newsboat-Images
 !/.local/state/w3m

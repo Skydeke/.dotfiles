@@ -1,0 +1,27 @@
+[credential]
+	helper = /usr/lib/git-core/git-credential-libsecret
+[user]
+	name = David Metzler
+	email = david-metzler@web.de
+[filter "lfs"]
+	clean = git-lfs clean -- %f
+	smudge = git-lfs smudge -- %f
+	process = git-lfs filter-process
+  required = true
+[merge]
+  tool = diffview
+[mergetool]
+  prompt = false
+  keepBackup = false
+[mergetool "diffview"]
+  cmd = nvim -n -c "DiffviewOpen" "$MERGE"
+[init]
+	defaultBranch = main
+[lfs "https://gitlab.miniserver/Skydeke/Illy.git/info/lfs"]
+	sslverify = false
+[lfs]
+	activitytimeout = 36000
+[pull]
+	rebase = true
+[core]
+	editor = nvim

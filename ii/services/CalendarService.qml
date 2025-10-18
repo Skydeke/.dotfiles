@@ -575,7 +575,7 @@ Singleton {
     Timer {
         id: interval
         running: root.edsAvailable
-        interval: Config.options?.resources?.updateInterval ?? 3000
+        interval: Config.options?.resources?.updateInterval * 60 ?? 3000 * 60
         repeat: true
         onTriggered: {
             if (root.calendarDirs.length > 0) {

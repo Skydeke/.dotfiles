@@ -9,6 +9,7 @@ AndroidQuickToggleButton {
     id: root
 
     name: Translation.tr("Screen snip")
+    statusText: ""
     toggled: false
     buttonIcon: "screenshot_region"
 
@@ -23,5 +24,9 @@ AndroidQuickToggleButton {
         onTriggered: {
             Quickshell.execDetached(["qs", "-p", Quickshell.shellPath("screenshot.qml")])
         }
+    }
+
+    StyledToolTip {
+        text: Translation.tr("Screen snip")
     }
 }

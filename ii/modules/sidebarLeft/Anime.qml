@@ -3,7 +3,7 @@ import qs.services
 import qs.modules.common
 import qs.modules.common.widgets
 import qs.modules.common.functions
-import "./anime/"
+import qs.modules.sidebarLeft.anime
 import QtQuick
 import QtQuick.Controls
 import QtQuick.Layouts
@@ -22,15 +22,6 @@ Item {
     property int tagSuggestionDelay: 210
     property var suggestionQuery: ""
     property var suggestionList: []
-
-    Connections {
-        target: Config
-        function onReadyChanged() {
-            if (Config.options.policies.weeb !== 0) {
-                Quickshell.execDetached(["bash", "-c", `mkdir -p '${root.downloadPath}' && mkdir -p '${root.nsfwPath}'`])
-            }
-        }
-    }
 
     Connections {
         target: Booru

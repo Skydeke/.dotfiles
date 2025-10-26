@@ -7,8 +7,6 @@ import QtQuick.Layouts
 import Quickshell
 import Quickshell.Bluetooth
 
-import "./androidStyle/"
-
 DelegateChooser {
     id: root
     property bool editMode: false
@@ -16,8 +14,11 @@ DelegateChooser {
     required property real baseCellHeight
     required property real spacing
     required property int startingIndex
-    signal openWifiDialog()
+    signal openAudioOutputDialog()
+    signal openAudioInputDialog()
     signal openBluetoothDialog()
+    signal openNightLightDialog()
+    signal openWifiDialog()
 
     role: "type"
 
@@ -32,7 +33,7 @@ DelegateChooser {
         baseCellHeight: root.baseCellHeight
         cellSpacing: root.spacing
         cellSize: modelData.size
-        altAction: () => {
+        onOpenMenu: {
             root.openWifiDialog()
         }
     } }
@@ -48,7 +49,7 @@ DelegateChooser {
         baseCellHeight: root.baseCellHeight
         cellSpacing: root.spacing
         cellSize: modelData.size
-        altAction: () => {
+        onOpenMenu: {
             root.openBluetoothDialog()
         }
     } }
@@ -90,6 +91,9 @@ DelegateChooser {
         baseCellHeight: root.baseCellHeight
         cellSpacing: root.spacing
         cellSize: modelData.size
+        onOpenMenu: {
+            root.openNightLightDialog()
+        }
     } }
 
     DelegateChoice { roleValue: "darkMode"; AndroidDarkModeToggle {
@@ -181,6 +185,9 @@ DelegateChooser {
         baseCellHeight: root.baseCellHeight
         cellSpacing: root.spacing
         cellSize: modelData.size
+        onOpenMenu: {
+            root.openAudioInputDialog()
+        }
     } }
 
     DelegateChoice { roleValue: "audio"; AndroidAudioToggle {
@@ -194,6 +201,9 @@ DelegateChooser {
         baseCellHeight: root.baseCellHeight
         cellSpacing: root.spacing
         cellSize: modelData.size
+        onOpenMenu: {
+            root.openAudioOutputDialog()
+        }
     } }
 
     DelegateChoice { roleValue: "notifications"; AndroidNotificationToggle {

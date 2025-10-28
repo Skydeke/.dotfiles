@@ -75,6 +75,8 @@
 !/.config/hypr/hyprland/keybinds.conf
 !/.config/hypr/hyprland/plugins.conf
 !/.config/hypr/hyprland/rules.conf
+!/.config/hypr/hyprland/scripts/
+!/.config/hypr/hyprland/scripts/start_geoclue_agent.sh
 !/.config/hypr/shaders
 !/.config/hypr/shaders/chromatic_abberation.frag 
 !/.config/hypr/shaders/crt.frag

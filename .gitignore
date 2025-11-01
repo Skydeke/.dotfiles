@@ -30,6 +30,12 @@
 !/.config/mpv/input.conf
 !/.config/mpv/shaders
 !/.config/mpv/shaders/*
+!/.config/mpv/scripts
+!/.config/mpv/scripts/*
+!/.config/mpv/fonts
+!/.config/mpv/fonts/*
+!/.config/mpv/script-opts
+!/.config/mpv/script-opts/*
 
 # Script
 !/.config/Scripts

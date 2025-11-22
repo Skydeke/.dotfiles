@@ -1,0 +1,11 @@
+[Unit]
+Description=Bidirectional sync of keepass.kbdx with Google Drive
+Wants=keepass-sync.timer
+
+[Service]
+Type=oneshot
+ExecStart=/usr/bin/rclone bisync %h/.keepass gdrive:keepass --backup-dir1 %h/.keepass_backup --backup-dir2 gdrive:keepass_backup --verbose
+TimeoutStartSec=120
+
+[Install]
+WantedBy=default.target

@@ -1,0 +1,11 @@
+[Unit]
+Description=Run KeePass bidirectional sync every 5 minutes
+
+[Timer]
+OnBootSec=2m
+OnUnitActiveSec=5m
+Unit=keepass-sync.service
+
+[Install]
+WantedBy=timers.target
+

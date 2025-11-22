@@ -104,6 +104,8 @@
 !/.config/systemd/user
 !/.config/systemd/user/ssh-agent.service 
 !/.config/systemd/user/mpris-proxy.service
+!/.config/systemd/user/keepass-sync.service 
+!/.config/systemd/user/keepass-sync.timer
 
 # Fontconfig
 !/.config/fontconfig

@@ -57,7 +57,6 @@ ShellRoot {
     // Well, these loaders only *allow* them to be loaded, to always load or not is defined in each component
     // The media controls for example is not loaded if it's not opened
     PanelLoader { identifier: "iiBar"; extraCondition: !Config.options.bar.vertical; component: Bar {} }
-    PanelLoader { identifier: "iiBackground"; component: Background {} }
     PanelLoader { identifier: "iiCheatsheet"; component: Cheatsheet {} }
     PanelLoader { identifier: "iiDock"; extraCondition: Config.options.dock.enable; component: Dock {} }
     PanelLoader { identifier: "iiLock"; component: Lock {} }
@@ -89,7 +88,7 @@ ShellRoot {
     // Panel families
     property list<string> families: ["ii", "waffle"]
     property var panelFamilies: ({
-        "ii": ["iiBar", "iiBackground", "iiCheatsheet", "iiDock", "iiLock", "iiMediaControls", "iiNotificationPopup", "iiOnScreenDisplay", "iiOnScreenKeyboard", "iiOverlay", "iiOverview", "iiPolkit", "iiRegionSelector", "iiReloadPopup", "iiScreenCorners", "iiSessionScreen", "iiSidebarLeft", "iiSidebarRight", "iiVerticalBar", "iiWallpaperSelector"],
+        "ii": ["iiBar", "iiCheatsheet", "iiDock", "iiLock", "iiMediaControls", "iiNotificationPopup", "iiOnScreenDisplay", "iiOnScreenKeyboard", "iiOverlay", "iiOverview", "iiPolkit", "iiRegionSelector", "iiReloadPopup", "iiScreenCorners", "iiSessionScreen", "iiSidebarLeft", "iiSidebarRight", "iiVerticalBar", "iiWallpaperSelector"],
         "waffle": ["wBar", "wBackground", "wActionCenter", "iiCheatsheet", "iiLock", "iiMediaControls", "iiNotificationPopup", "iiOnScreenDisplay", "iiOnScreenKeyboard", "iiOverlay", "iiOverview", "iiPolkit", "iiRegionSelector", "iiReloadPopup", "iiSessionScreen", "iiSidebarRight", "iiWallpaperSelector"],
     })
     function cyclePanelFamily() {

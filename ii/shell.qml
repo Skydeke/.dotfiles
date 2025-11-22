@@ -8,24 +8,25 @@
 
 
 import qs.modules.common
-import qs.modules.background
-import qs.modules.bar
-import qs.modules.cheatsheet
-import qs.modules.crosshair
-import qs.modules.dock
-import qs.modules.lock
-import qs.modules.mediaControls
-import qs.modules.notificationPopup
-import qs.modules.onScreenDisplay
-import qs.modules.onScreenKeyboard
-import qs.modules.overview
-import qs.modules.regionSelector
-import qs.modules.screenCorners
-import qs.modules.sessionScreen
-import qs.modules.sidebarLeft
-import qs.modules.sidebarRight
-import qs.modules.verticalBar
-import qs.modules.wallpaperSelector
+import qs.modules.ii.background
+import qs.modules.ii.bar
+import qs.modules.ii.cheatsheet
+import qs.modules.ii.dock
+import qs.modules.ii.lock
+import qs.modules.ii.mediaControls
+import qs.modules.ii.notificationPopup
+import qs.modules.ii.onScreenDisplay
+import qs.modules.ii.onScreenKeyboard
+import qs.modules.ii.overview
+import qs.modules.ii.polkit
+import qs.modules.ii.regionSelector
+import qs.modules.ii.screenCorners
+import qs.modules.ii.sessionScreen
+import qs.modules.ii.sidebarLeft
+import qs.modules.ii.sidebarRight
+import qs.modules.ii.overlay
+import qs.modules.ii.verticalBar
+import qs.modules.ii.wallpaperSelector
 
 import QtQuick
 import QtQuick.Window
@@ -38,13 +39,14 @@ ShellRoot {
     property bool enableBar: true
     property bool enableBackground: true
     property bool enableCheatsheet: true
-    property bool enableCrosshair: true
     property bool enableDock: true
     property bool enableLock: true
     property bool enableMediaControls: true
     property bool enableNotificationPopup: true
+    property bool enablePolkit: true
     property bool enableOnScreenDisplay: true
     property bool enableOnScreenKeyboard: true
+    property bool enableOverlay: true
     property bool enableOverview: true
     property bool enableRegionSelector: true
     property bool enableReloadPopup: true
@@ -68,14 +70,15 @@ ShellRoot {
     LazyLoader { active: enableBar && Config.ready && !Config.options.bar.vertical; component: Bar {} }
     LazyLoader { active: enableBackground; component: Background {} }
     LazyLoader { active: enableCheatsheet; component: Cheatsheet {} }
-    LazyLoader { active: enableCrosshair; component: Crosshair {} }
     LazyLoader { active: enableDock && Config.options.dock.enable; component: Dock {} }
     LazyLoader { active: enableLock; component: Lock {} }
     LazyLoader { active: enableMediaControls; component: MediaControls {} }
     LazyLoader { active: enableNotificationPopup; component: NotificationPopup {} }
     LazyLoader { active: enableOnScreenDisplay; component: OnScreenDisplay {} }
     LazyLoader { active: enableOnScreenKeyboard; component: OnScreenKeyboard {} }
+    LazyLoader { active: enableOverlay; component: Overlay {} }
     LazyLoader { active: enableOverview; component: Overview {} }
+    LazyLoader { active: enablePolkit; component: Polkit {} }
     LazyLoader { active: enableRegionSelector; component: RegionSelector {} }
     LazyLoader { active: enableReloadPopup; component: ReloadPopup {} }
     LazyLoader { active: enableScreenCorners; component: ScreenCorners {} }

@@ -158,6 +158,16 @@ Singleton {
         let luminance = 0.2126 * r + 0.7152 * g + 0.0722 * b;
         // Return high contrast color
         return luminance < 0.5 ? "#FFFFFF" : "#000000";
-    }
+      }
 
+    /**
+     * Returns true if the color is considered "dark" (hslLightness < 0.5).
+     *
+     * @param {string} color - The color to check (any Qt.color-compatible string).
+     * @returns {boolean} True if dark, false otherwise.
+     */
+    function isDark(color) {
+        var c = Qt.color(color);
+        return c.hslLightness < 0.5;
+    }
 }

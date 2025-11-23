@@ -57,6 +57,29 @@ apply_qt() {
   python "$CONFIG_DIR/scripts/kvantum/changeAdwColors.py" # apply config colors
 }
 
+apply_openrgb() {
+    # Get dominant color from the color scheme (as a selector)
+    dominant_color="{{ \$onPrimary }}"
+
+    # Apply colors to resolve the selector
+    temp_color="$dominant_color"
+    for i in "${!colorlist[@]}"; do
+        temp_color="${temp_color//\{\{ ${colorlist[$i]} \}\}/${colorvalues[$i]}}"
+    done
+
+    # Remove the leading '#' if present
+    temp_color="${temp_color#\#}"
+
+    # Apply the resolved color to all OpenRGB devices using the default profile
+    openrgb -sp Default -c $temp_color
+
+    if [ $? -eq 0 ]; then
+        echo "Applied dominant color $temp_color to all devices using the default profile."
+    else
+        echo "Failed to apply color to devices."
+    fi
+}
+
 # Check if terminal theming is enabled in config
 CONFIG_FILE="$XDG_CONFIG_HOME/illogical-impulse/config.json"
 if [ -f "$CONFIG_FILE" ]; then
@@ -70,3 +93,4 @@ else
 fi
 
 # apply_qt & # Qt theming is already handled by kde-material-colors
+apply_openrgb &

@@ -117,8 +117,8 @@ PROMPT_COMMAND='history -a;'
 export SSH_AUTH_SOCK="$XDG_RUNTIME_DIR/ssh-agent.socket"
 export CRYPTOGRAPHY_OPENSSL_NO_LEGACY="1"
 export ROS_DOMAIN_ID="78"
-
-export DIFFPROG="nvim -d"
-export MERGEPROG="nvim -d"
+export DIFFPROG="nvim -d $1 $2"
+export MERGEPROG="nvim -d $1 $2 $3"
+export EDITOR="nvim"
 
 fish

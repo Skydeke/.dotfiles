@@ -1,0 +1,4 @@
+[submodule ".config/quickshell/ii/modules/common/widgets/shapes"]
+    path = .config/quickshell/ii/modules/common/widgets/shapes
+    url = https://github.com/end-4/rounded-polygon-qmljs.git
+

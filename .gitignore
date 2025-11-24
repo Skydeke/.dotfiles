@@ -41,6 +41,7 @@
 !/.config/Scripts
 !/.config/Scripts/upower-bars.sh
 !/.config/Scripts/install-grub-secureboot.sh
+!/.config/Scripts/update-quickshell.sh
 
 
 # Newsboat-Images
